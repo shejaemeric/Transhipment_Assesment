@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Transhipment_Assesment/static/js/main.96d53c5f.js",
+    "main.js": "/Transhipment_Assesment/static/js/main.c17fd8a5.js",
     "index.html": "/Transhipment_Assesment/index.html",
-    "main.96d53c5f.js.map": "/Transhipment_Assesment/static/js/main.96d53c5f.js.map"
+    "main.c17fd8a5.js.map": "/Transhipment_Assesment/static/js/main.c17fd8a5.js.map"
   },
   "entrypoints": [
-    "static/js/main.96d53c5f.js"
+    "static/js/main.c17fd8a5.js"
   ]
 }
