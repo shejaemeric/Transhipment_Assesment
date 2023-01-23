@@ -1,5 +1,6 @@
 # React Assesment
-demo link:
+author: SHEJA Lervy Emeric
+deployed app link: https://shejaemeric.github.io/Transhipment_Assesment/
 ## Available Scripts
 
 In the project directory, you can run:
