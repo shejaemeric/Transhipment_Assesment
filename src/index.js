@@ -1,17 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Provider } from "react-redux";
+import store from "./store";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import App from "./App";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#26AAE1",
+      contrastText: "#fff",
+    },
+  },
+  typography: {
+    body1: {
+      fontStyle: "normal",
+      fontWeight: 500,
+      fontSize: "15px",
+      lineHeight: "18px",
+      color: "#000000",
+    },
+    subtitle1: {
+      fontFamily: "'Roboto'",
+      fontStyle: "normal",
+      fontWeight: 500,
+      fontSize: "12.6204px",
+      lineHeight: "15px",
+      color: "#9E9E9E",
+    },
+  },
+});
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Provider store={store}>
+    <StrictMode>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </StrictMode>
+  </Provider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
