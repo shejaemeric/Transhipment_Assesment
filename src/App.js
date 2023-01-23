@@ -32,7 +32,6 @@ const App = () => {
   const dispatch = useDispatch();
   const handleAddItem = (e) => {
     e.preventDefault();
-    console.log(inputValues[1]);
     dispatch(
       addItem({
         plateNumber: inputValues[0],
@@ -45,7 +44,6 @@ const App = () => {
       })
     );
   };
-  console.log(newItem);
   return (
     <div>
       <CommonHeader>New Transhipment Entry</CommonHeader>
